@@ -14,6 +14,8 @@ const ProgramRisks: React.FC = () => {
         <h2 className="text-xl font-medium">Program Risks</h2>
         <p className="mt-4">This tab would display identified program risks and mitigation strategies.</p>
         <p className="mt-2">In a complete implementation, this would include risk assessments, impact analysis, and ownership.</p>
+        <p className="mt-2">For now I kept this blank</p>
+
       </div>
     </div>
   );

@@ -14,6 +14,8 @@ const PlanningFeature: React.FC = () => {
         <h2 className="text-xl font-medium">Planning Feature</h2>
         <p className="mt-4">This tab would display detailed planning feature information.</p>
         <p className="mt-2">In a complete implementation, this would include feature lists, assignments, and detailed planning metrics.</p>
+        <p className="mt-2">For now I kept this blank</p>
+
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
   "name": "pi-planning-dashboard",
   "version": "0.1.0",
   "private": true,
+  "author": "Ajit Yadav",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
