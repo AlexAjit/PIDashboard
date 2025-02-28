@@ -1,7 +1,5 @@
 import { DashboardData } from '../types';
 import { exportToPPT } from '../utils/exportToPPT';
-import { FilterOptions } from '../types';
-import { dashboardData } from '../data/mockData';
 
 export const exportDashboardToPPT = (data: DashboardData): void => {
   exportToPPT(data);
@@ -40,32 +38,4 @@ export const exportDashboardToCSV = (data: DashboardData): void => {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-};
-
-export const fetchDashboardData = async (filters: FilterOptions): Promise<DashboardData> => {
-  // In a real application, this would make an API call with the filters
-  // For now, we'll just simulate a delay and return the mock data
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(dashboardData);
-    }, 500);
-  });
-};
-
-export const getDashboardDataByRelease = async (release: string): Promise<DashboardData> => {
-  // In a real application, this would fetch data for a specific release
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(dashboardData);
-    }, 500);
-  });
-};
-
-export const getDashboardDataByTeam = async (team: string): Promise<DashboardData> => {
-  // In a real application, this would fetch data for a specific team
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(dashboardData);
-    }, 500);
-  });
 };
