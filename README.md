@@ -15,16 +15,16 @@ Clone the repository:
 git clone https://github.com/AlexAjit/PIDashboard.git
 cd PIDashboard
 ```
-##Install dependencies:
+## Install dependencies:
 
 ```bash
 npm install
 ```
 
-##Start the development server:
+## Start the development server:
 
 ```bash
 npm run dev
 ```
 
-##Open http://localhost:3000 in your browser.
+## Open http://localhost:3000 in your browser.
