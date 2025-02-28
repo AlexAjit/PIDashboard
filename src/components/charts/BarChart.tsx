@@ -48,7 +48,7 @@ const BarChart: React.FC<BarChartProps> = ({ data, title, height = 200 }) => {
           ))}
         </div>
       </div>
-      <div className="h-6"></div> {/* Space for rotated labels */}
+      <div className="h-6"></div>
     </div>
   );
 };

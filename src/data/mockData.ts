@@ -63,7 +63,7 @@ export const releases = [
   "PI Q3 2024"
 ];
 
-export const getFilteredData = (release: string, team: string): DashboardData => {
+export const getFilteredData = (): DashboardData => {
   // In a real application, this would filter the data based on the release and team
   // For this mock, we'll just return the same data
   return dashboardData;

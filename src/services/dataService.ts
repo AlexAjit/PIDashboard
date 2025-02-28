@@ -6,7 +6,6 @@ export const exportDashboardToPPT = (data: DashboardData): void => {
 };
 
 export const exportDashboardToCSV = (data: DashboardData): void => {
-  // Convert dashboard data to CSV format
   const headers = [
     "Metric,Value",
   ].join("\n");
@@ -28,7 +27,6 @@ export const exportDashboardToCSV = (data: DashboardData): void => {
 
   const csvContent = `${headers}\n${rows}`;
   
-  // Create a blob and download the file
   const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');

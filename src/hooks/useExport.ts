@@ -3,7 +3,6 @@ import { DashboardData } from '../types';
 
 export const useExport = () => {
   const exportToCsv = useCallback((data: DashboardData) => {
-    // Convert dashboard data to CSV format by using export button
     const headers = [
       "Metric,Value",
     ].join("\n");
@@ -25,7 +24,6 @@ export const useExport = () => {
 
     const csvContent = `${headers}\n${rows}`;
     
-    // Create a blob and download the file
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
