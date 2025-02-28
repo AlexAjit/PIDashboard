@@ -17,7 +17,7 @@ const PlanningOutcome: React.FC = () => {
       {
         label: 'Count',
         data: data.clusterThemeData.map(item => item.count),
-        backgroundColor: '#228B22', // Green color
+        backgroundColor: '#228B22',
       }
     ]
   };
