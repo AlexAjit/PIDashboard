@@ -3,7 +3,7 @@ import { DashboardData } from '../types';
 
 export const useExport = () => {
   const exportToCsv = useCallback((data: DashboardData) => {
-    // Convert dashboard data to CSV format
+    // Convert dashboard data to CSV format by using export button
     const headers = [
       "Metric,Value",
     ].join("\n");
