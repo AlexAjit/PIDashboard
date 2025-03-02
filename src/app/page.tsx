@@ -1,6 +1,6 @@
 'use client';
 
-import React, { } from 'react';
+import React from 'react';
 import { useDashboard } from '../context/DashboardContext';
 import Header from '../components/common/Header';
 import FilterBar from '../components/common/FilterBar';
@@ -13,14 +13,16 @@ import TeamProgramBoard from '../components/dashboard/TeamProgramBoard';
 import TeamBoard from '../components/dashboard/TeamBoard';
 import ProgramRisks from '../components/dashboard/ProgramRisks';
 import NotPlanned from '../components/dashboard/NotPlanned';
-import { exportDashboardToCSV } from '../services/exportService';
+import { exportDashboardToPPT } from '../services/exportService';
 
 const Dashboard: React.FC = () => {
   const { activeTab, data } = useDashboard();
 
   const handleExport = () => {
     if (data) {
-      exportDashboardToCSV(data);
+      exportDashboardToPPT(data);
+    } else {
+      alert('No dashboard data available to export');
     }
   };
 
