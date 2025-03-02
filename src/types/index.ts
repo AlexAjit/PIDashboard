@@ -33,6 +33,7 @@ export interface ClusterData {
 }
 
 export interface ChartData {
+  [x: string]: unknown;
   labels: string[];
   datasets: {
     label: string;
@@ -56,4 +57,10 @@ export interface DashboardData {
   notPlanned: number;
   clusterThemeData: ClusterData[];
   teamData: Record<string, number>;
+}
+
+export enum SHAPE_NAME {
+  RECTANGLE = "RECTANGLE",
+  CIRCLE = "CIRCLE",
+  SQUARE = "SQUARE",
 }
